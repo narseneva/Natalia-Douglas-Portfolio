@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Natalia Douglas
+	File Name: contact.html
+	Date: 9/29/2021
+ -->
+<html lang="en">
+<head>
+	<title>Natalia Douglas/ Contacts</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My email, phone, location. You can contact me at any time">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+<body>
+
+<!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="hobby.html">My Hobby</a>
+                <a href="work.html">Work</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+	<header>
+		 <h1>Natalia Douglas</h1>
+  <div>
+      <figure>
+       <figcaption>Web developer</figcaption>
+     </figure>
+  </div>
+	</header>
+
+	<nav class="td">
+		<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="hobby.html">My Hobby</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </ul>
+	</nav>
+
+	<!-- Use the main area to add the main content of the webpage -->
+	<main>
+
+		  <div id="contact">
+					<h2>You can reach me at:</h2>
+					<p><a href="mailto:nouglus2010@gmail.com" class="link">nouglus2010@gmail.com</a></p>
+					<p class="phone">Telephone: 727-210-9197</p>
+					<br>
+					<p>My college is located at:</p>
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449260.0862022458!2d-82.76851193719484!3d28.393766582604666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2974d054916b1%3A0x98e5a45443f60db!2sPasco-Hernando+State+College!5e0!3m2!1sen!2sus!4v1558366207337!5m2!1sen!2sus" width="600" height="450" class="map" allowfullscreen></iframe>-->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.717361793719!2d-82.72002168403782!3d27.91064552313327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e5ccc93e90ff%3A0x6b4ace170a0ef49e!2sPinellas%20Technical%20College!5e0!3m2!1sen!2sus!4v1657553141070!5m2!1sen!2sus" width="600" height="450" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		    </div>
+        <br>
+        <div id="form">
+          <h2>Complete the form below and I will contact with you.</h2>
+          <form class="form-grid"><!--Start Form-->
+
+            <fieldset>
+              <legend>Your Information</legend>
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName" required>
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required>
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Information</legend>
+                <p class="addInf">I would like more information about:</p>
+                  <label for="faser"><input type="checkbox" name="interest" id="faser" value="Fast Service">First Service</label>
+                  <label for="reser"><input type="checkbox" name="interest" id="reser" value="Regular Service">Regular Service</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Referral Sourse</legend>
+                <label for="reference">How did you find me?</label>
+                <select name="reference" id="reference">
+                  <option value="friend">Friend</option>
+                  <option value="google">Google</option>
+                  <option value="social">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+
+                <label for="questions">Questions?</label>
+                <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn">
+          </form>
+        </div>
+				</<main>
+
+					<footer>
+ 			     <div class="copyright">
+ 			       <p>&copy; Copyright 2022. All Rights Reserved.</p>
+ 			       <p><a href="mailto:nouglus2010@gmail.com">nouglus2010@gmail.com</a></p>
+ 			     </div>
+
+ 			     <div class="social">
+ 			       <a href=https://www.facebook.com target="_blank" class="fb">
+ 			       <i class="fab fa-facebook-square"></i></a>
+
+ 			       <a href=https://www.twitter.com target="_blank" class="tw">
+ 			       <i class="fab fa-twitter-square"></i></a>
+ 			     </div>
+ 			   </footer>
+				 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+				 <script src="scripts/script.js"></script>
+				 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+ 			   </body>
+ 			   </html>
